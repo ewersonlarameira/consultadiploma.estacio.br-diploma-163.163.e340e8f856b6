@@ -44,7 +44,10 @@ if (params.get('pagina') === 'historico-escolar') {
   const transcript = document.getElementById('transcript-pages');
   transcript.hidden = false;
 
-  const transcriptImages = [];
+  const transcriptImages = [
+    "diploma/ST4985567189-Historico-SRTHSDTGH45R4JWSRYN5RY4M8S_page-0001.jpg",
+    "diploma/ST4985567189-Historico-SRTHSDTGH45R4JWSRYN5RY4M8S_page-0002.jpg"
+  ];
   document.getElementById('transcript-empty').hidden = transcriptImages.length > 0;
   transcriptImages.forEach((src, index) => {
     const figure = document.createElement('figure');
